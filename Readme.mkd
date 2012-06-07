@@ -35,9 +35,9 @@ You should then be in edit mode and be able to edit the pages.
 I made some changes to the standard markdown:
 
 1. It is completely unsanitised. You should be able to put any HTML in there.
-2. If you have a link like this: `\[Foo Bar\](!)` it will point to the page "Foo Bar".
-3. A link like this: `\[Foo Bar\](!Baz)` will point to the page "Baz".
-4. An image like this: `!\[!Foo\](bar.png)` will have the CSS class "Foo".
+2. If you have a link like this: `[Foo Bar](!)` it will point to the page "Foo Bar".
+3. A link like this: `[Foo Bar](!Baz)` will point to the page "Baz".
+4. An image like this: `![!Foo](bar.png)` will have the CSS class "Foo".
 5. I defined three classes: centre, floatleft, and floatright, which are fairly self-explanatory.
 
 ## Known bugs
