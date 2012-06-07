@@ -1,0 +1,54 @@
+# WebMS
+
+## What is this?
+
+A simple markdown-based wiki-style website system. It runs my site at http://creeder.com/
+It is suitable for you if:
+
+* You run a website which only you edit (or you completely trust all editors).
+* You don't like editing raw HTML, but want to be able to if necessary (e.g. to embed Youtube videos).
+* You prefer a "proper" site to a blog.
+* You can run compiled (C++) CGI on your website. E.g. Hostmonster allows this.
+* You like markdown.
+* You know a little C++.
+
+## Technical details
+
+It's written in C++, which is an unusual choice, but I like C++ and have used it for other CGI projects
+successfully in the past. The code base is pretty small. Only 10 cpp files which are all quite short, so
+it is easy to modify. It is not a complete web server - it runs using the old environmental variable-based CGI
+method, so you need Apache or another web server too.
+
+## Installation
+
+1. Edit the details in `Config.h`.
+2. Compile it using Qt's `qmake`.
+3. Rename the binary to `index.cgi` or whatever, and edit your web server rules so that it will be run.
+4. Upload the binary, and the `resources` directory to your server.
+5. You probably want to edit `resources/template.html` and `resources/style.css` to make them unique to your site.
+
+## Usage
+
+Simply click the pi in the bottom right corner of each page, type in your password and press enter.
+You should then be in edit mode and be able to edit the pages.
+
+I made some changes to the standard markdown:
+
+1. It is completely unsanitised. You should be able to put any HTML in there.
+2. If you have a link like this: `\[Foo Bar\](!)` it will point to the page "Foo Bar".
+3. A link like this: `\[Foo Bar\](!Baz)` will point to the page "Baz".
+4. An image like this: `!\[!Foo\](bar.png)` will have the CSS class "Foo".
+5. I defined three classes: centre, floatleft, and floatright, which are fairly self-explanatory.
+
+## Known bugs
+
+* Currently, the log-in timeout is from the time you logged in, rather than the last time you loaded a page.
+* When you edit a page, the browser scrolls to the top of the page, which is a bit annoying.
+* The editing password is stored in plain text in the binary, so anyone with access to it can get your password.
+On the other hand, the password is never sent over-the-wire in plain text.
+* Data is stored in flat files with no consideration of race conditions or anything. This is unlikely to cause
+problems but it is not ideal.
+
+## Licence
+
+This is licenced under the GPL3, which you can find on the Gnu website.

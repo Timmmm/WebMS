@@ -1,0 +1,122 @@
+/*
+Design by Free CSS Templates http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+Modified by Tim Hutt, 2009.
+*/
+
+body
+{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAACdJREFUCJlj3H3uxH9xcQkGGGBC5rx8+YKBCZkjLi4BEYBxGBgYGADEAwyeXWlVfQAAAABJRU5ErkJggg==);
+	background-repeat: repeat;	
+	margin: 20px 0 0 0;
+	color: #4C4C4C;
+	font: 13px Tahoma, Arial, Helvetica, sans-serif;
+}
+
+a
+{
+	color: #2B2B2B;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+#container
+{
+	width: 70%;
+	background-color: #ffffff;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	border-radius: 20px 20px 15px 15px;
+	-moz-border-radius: 15px;
+	box-shadow: 0px 0px 20px #000;
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+}
+
+#menu
+{
+	border-radius: 15px 15px 0px 0px;
+	width: 100%;
+	height: 35px;
+	background: #333340;
+	margin: 0;
+}
+
+#menu a
+{
+	margin: 0px;
+	padding: 10px 15px 10px 15px;
+	border-left: 1px solid #666666;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-size: 13px;
+	line-height: 35px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#menu a:hover
+{
+	background: #AAAAAF;
+	color: #000000;
+}
+
+#menu .first
+{
+	border: none;
+}
+
+#content
+{
+	padding: 15px 35px 10px 35px;
+}
+
+#footer p
+{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	width: 100%;
+	border-top: 1px solid #aaaaaa;
+	background-color: #eeeeee;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	-moz-border-radius-bottomleft: 15px;
+}
+
+#footer p
+{
+	color: gray;
+}
+
+#footer a
+{
+	color: gray;
+}
+
+code
+{
+	background-color: #eee;
+}
+
+.floatleft
+{
+	float: left;
+}
+
+.floatright
+{
+	float: right;
+}
+
+.centre
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

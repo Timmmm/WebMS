@@ -1,0 +1,13 @@
+I am going to change the architecture slightly.
+
+Currently, markdown is sent to the server to be rendered as HTML.
+
+I will change this so that the markdown is rendered as HTML when you save the page, and *both* are
+sent to the server.
+
+Obviously this means that you have to completely trust the people editing the pages, because they
+can put any HTML on your server.
+
+This removes the need for any markdown on the server-side, and will make optional raw-HTML editing easier.
+
+Should also do automatic backups!
